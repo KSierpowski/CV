@@ -1,0 +1,111 @@
+* {
+   
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+}
+
+body{
+    font-family: "Courier New", monospace;
+    background-color: rgb(20, 20, 20);
+    
+}
+.container{
+    margin: auto;
+    padding: 0 16px;
+}
+
+header{
+    background-image: url('images/background.jpg');
+    background-size: cover; /* Skalowanie obrazu, aby wypełnić cały nagłówek */
+    background-position: center; /* Ustawienie pozycji obrazu na środku */
+    height: 400px; /* Dostosuj wysokość nagłówka do swoich potrzeb */
+    text-align: center; /* Wyrównanie tekstu do środka */
+    width: 100%;
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+header .container .header_title .top_text{
+    -webkit-text-stroke: 1.5px rgb(28, 236, 0); /* width and color */
+    font-family: monospace; color: rgb(0, 184, 216);
+    font-size: 67px;
+    font-weight: bold;
+    position: absolute;
+    top: 18%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+}
+header .container .header_title .bot_text{
+    color: white;
+    font-size: 36px;
+    position: absolute;
+    margin-top: 20px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+}
+
+header .container nav{
+    
+    position: fixed;
+    left: 77%; 
+    margin-top: -350px;
+    white-space: nowrap;
+}
+header .container nav ul{
+    margin:0;
+    padding: 0;
+}
+header .container nav ul li{
+    display: inline-block;
+}
+header .container nav ul li a{
+    color: var(--gray, #ffffff);
+    font-size: 20px;
+    letter-spacing: 0.37px;
+    margin-right: 10px;
+    text-decoration: none;
+    z-index: 1; 
+    
+    width: 100%;
+}
+
+.about_me{
+    color: white;
+    display: flex;
+}
+
+.about_me .why_me{
+font-size: 50px;
+text-align: center;
+max-width: 27%;height: 1260px;;
+margin-top: 40px;
+margin-left: 13%;
+border: 1px solid white;
+}
+
+.about_me .my_projects{
+font-size: 50px;
+text-align: center;
+max-width: 27%;height: 1260px;;
+margin-top: 40px;
+margin-left: 13%;
+border: 1px solid white;
+}
+
+.about_me .my_story{
+    font-size: 50px;
+    text-align: center;
+    max-width: 27%;height: 1260px;;
+    margin-top: 40px;
+    margin-left: 13%;
+    border: 1px solid white;
+    }
