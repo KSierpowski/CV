@@ -13,10 +13,30 @@ body{
 }
 .container{
     margin: auto;
-    padding: 0 16px;
+    padding: 0;
+}
+header{
+    background-color: rgb(0 0 0 / 40%);
+    padding: 10px;
+    width: 100%;
+    position: fixed;
+}
+header nav{
+    white-space: nowrap;
+    margin-left: 80%;
 }
 
-header{
+header nav ul li{
+    display: inline-block;
+}
+header nav ul li a{
+    color: var(--gray, #ffffff);
+    font-size: 20px;
+    letter-spacing: 0.37px;
+    margin-right: 10px;
+    text-decoration: none;
+}
+.text_title{
     background-image: url('images/background.jpg');
     background-size: cover; /* Skalowanie obrazu, aby wypełnić cały nagłówek */
     background-position: center; /* Ustawienie pozycji obrazu na środku */
@@ -25,14 +45,14 @@ header{
     width: 100%;
 }
 
-header .container{
+.text_title .container{
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 100%;
 }
 
-header .container .header_title .top_text{
+  .text_title .top_text{
     -webkit-text-stroke: 1.5px rgb(28, 236, 0); /* width and color */
     font-family: monospace; color: rgb(0, 184, 216);
     font-size: 67px;
@@ -43,39 +63,14 @@ header .container .header_title .top_text{
     transform: translate(-50%, -50%);
     text-decoration: none;
 }
-header .container .header_title .bot_text{
+  .text_title .bot_text{
     color: white;
     font-size: 36px;
     position: absolute;
-    margin-top: 20px;
+    margin-top: 220px;
     left: 50%;
     transform: translate(-50%, -50%);
     text-decoration: none;
-}
-
-header .container nav{
-    
-    position: fixed;
-    left: 77%; 
-    margin-top: -350px;
-    white-space: nowrap;
-}
-header .container nav ul{
-    margin:0;
-    padding: 0;
-}
-header .container nav ul li{
-    display: inline-block;
-}
-header .container nav ul li a{
-    color: var(--gray, #ffffff);
-    font-size: 20px;
-    letter-spacing: 0.37px;
-    margin-right: 10px;
-    text-decoration: none;
-    z-index: 1; 
-    
-    width: 100%;
 }
 
 .projects{
