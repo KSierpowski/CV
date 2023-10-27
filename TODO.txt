@@ -1,0 +1,6 @@
+1. reason przekierowuje na inne strony 
+- zdjecia info o muzyce
+- doświadczenie zawodowe
+- soundcloud o miksie, projekty github
+
+project przewija zdjęcia które po kliknięciu przerzucają na strony z gierkami czy moimi stronami
