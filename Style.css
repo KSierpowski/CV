@@ -118,9 +118,7 @@ header nav ul li a{
     flex-direction: column;
     max-width: 33%;
 }
-.my_works .my_projects .buttons{
-    flex-direction: none;
-}
+
 .my_works .my_projects h3{
     font-size: 40px;
     padding-bottom: 30px;
@@ -133,39 +131,57 @@ header nav ul li a{
     max-width: 600px;
     height: 100%;
     max-height: 320px;
+    opacity:70%;
 }.my_works .my_projects .project {
     width: 100%;
     height: 100%;
     max-width: 600px;
     max-height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.my_works .my_projects .project button{
+
+.my_works .my_projects .project text{
+    color:rgb(255, 255, 255);
+    background-color: rgba(104, 104, 104, 0.3);
+    font-size: 20px;
+    font-weight: bold;
+    text-wrap: wrap;
+    text-align: center;
+    max-width: 300px;
+    position: absolute;
+    z-index: 2;
+}
+.my_works .my_projects .buttons  {
+    display: flex;
+    justify-content: center;
+
+}
+.my_works .my_projects .buttons .toggle_buttons {
+    width: 100%; 
+    height: 100%;
+    opacity:30%;
+    display: flex;
+    position: absolute;
+    z-index: 1; 
+}
+.my_works .my_projects .buttons .toggle_buttons:hover {
+    opacity:60%;
+}
+.my_works .my_projects .buttons #viewButton{
     padding: 10px;
     width: 100%;
     border-radius: 18px;
+    margin-top: 51%;
     border: 2px solid #00ffff;
     background-color: rgb(54, 54, 54);
     color: #00ffff;
     position:absolute;
-    margin-left: -50%;
     cursor: pointer;
     z-index: 2;
 }
-.my_works .my_projects .buttons {
-    width: 100%; 
-    height: 100%;
-    margin-top: 38px;
-    align-items: center;
-    opacity:30%;
-    display: flex;
-    position: absolute;
-    z-index: 1;
-   
-}
-.my_works .my_projects .buttons:hover {
-    opacity:60%;
-}
-.my_works .my_projects .buttons #nextButton{
+.my_works .my_projects .buttons .toggle_buttons #nextButton{
     margin-left: auto;
     background-color: #535353;
     font-size:80px;
@@ -174,9 +190,11 @@ header nav ul li a{
     height: 80%;
     width: 25%;
     border:none;
+    
+    cursor: pointer;
 }
 
-.my_works .my_projects .buttons #prevButton{
+.my_works .my_projects .buttons .toggle_buttons #prevButton{
     background-color: #535353;
     font-size:80px;
     color: rgb(187, 187, 187);
@@ -184,6 +202,8 @@ header nav ul li a{
     height: 80%;
     width: 25%;
     border:none;
+    
+    cursor: pointer;
 }
 
 
