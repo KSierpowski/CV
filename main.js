@@ -38,6 +38,7 @@ reasons.forEach(reason => {
   function displayProject() {
       if (displayedProjectDiv) {
           projectsSection.removeChild(displayedProjectDiv); // Usuń poprzedni projekt
+          
       }
   
       const project = myProjects[currentIndex];
@@ -72,7 +73,7 @@ reasons.forEach(reason => {
   });
   prevButton.addEventListener('click', () => {
     currentIndex--;
-    if (currentIndex <0){
+    if (currentIndex < 0){
         currentIndex=myProjects.length -1
     } 
     
