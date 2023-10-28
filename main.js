@@ -60,6 +60,7 @@ reasons.forEach(reason => {
       button.addEventListener('click', () => {
           window.location.href = project.url;
       });
+      
   }
   
   displayProject(); 
