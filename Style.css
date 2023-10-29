@@ -20,6 +20,7 @@ header{
     padding: 10px;
     width: 100%;
     position: fixed;
+    z-index: 5;
 }
 header nav{
     white-space: nowrap;
@@ -58,7 +59,7 @@ header nav ul li a{
     font-size: 67px;
     font-weight: bold;
     position: absolute;
-    top: 18%;
+    margin-top: 170px;
     left: 50%;
     transform: translate(-50%, -50%);
     text-decoration: none;
@@ -206,7 +207,42 @@ header nav ul li a{
     cursor: pointer;
 }
 
+.container h4{
+    font-size: 35px;
+    color: white;
+    margin-top: 150px;
+    margin-bottom: 10px;
+    text-align: center;
+}
 
+.my_road {
+    background-color: #383838;
+    padding: 3px;
+    margin-bottom: 1000px;
+    display: flex;
+    justify-content: space-around;
+}
+.my_road img{
+    max-width: 80px;
+    max-height: 80px;
+}
+.my_road img:nth-last-child(-n+5) {
+    filter: grayscale(100%);
+}
+
+.my_road p{
+    text-align: center;
+    display: inline-block;
+    font-size: 60px;
+}
+
+
+.my_road .im_here{
+    position:absolute;
+    padding: 12px;
+    font-weight: bold;
+    color: white;;
+}
 
 
 
