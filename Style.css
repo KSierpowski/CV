@@ -247,15 +247,13 @@ header nav ul li a{
 .about_me_container{
     display: flex;
     margin-bottom: 1000px;
-    max-width: 50%;
-    margin-left: 50px;
-
     justify-content: space-between; /* Dodaj to, aby panele były wyśrodkowane i rozłożone na końcach */
 }
 .about_me_container .about_me {
     display: flex;
     flex-direction: column; /* Wyśrodkuj elementy pionowo w kontenerze .about_me */
     align-items: center; /* Wyśrodkuj elementy w poziomie w kontenerze .about_me */
+    width: 50%;
   }
 .about_me_container .about_me h5{
     font-size: 50px;
@@ -268,15 +266,12 @@ header nav ul li a{
 .about_me_container .about_me .left_panel{
     margin-left: 50px;
     display: flex;
-    justify-content: center;
     align-items: center;
     border: inset #1cec00;
     box-shadow:0px 0px 40px 2px #00d5ff ;
-    align-items: center; /* Wyśrodkuj elementy w poziomie w lewym panelu */
+    justify-content: center;
+    
   }
-
-
-
 
 .about_me_container .about_me .left_panel img{
     max-width: 20%;
@@ -289,18 +284,44 @@ header nav ul li a{
     display: flex;
     justify-content: center; 
 }
-
+.about_me_container .my_skills{
+    width: 50%;
+    margin-left: 50px;
+    margin-right: 50px;
+}
 .about_me_container .my_skills h6{
     font-size: 50px;
     color:white;
     z-index: 2;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
     display: flex;
+    align-items: center;
+    justify-content: center; 
 
 }
 
 .about_me_container .my_skills .right_panel {
     display: flex;
-    flex-direction: column; /* Wyśrodkuj elementy pionowo w prawym panelu */
-    align-items: center; /* Wyśrodkuj elementy w poziomie w prawym panelu */
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
+  .about_me_container .my_skills .right_panel .skill {
+    padding:10px;
+    cursor: pointer;
+    border: 1px solid #1cec00;
+    height: 50px;
+    box-sizing: border-box;
+    flex: 0 0 calc(50% - 10px); /* Po dwóch elementach zawijanie na nowy wiersz */
+    margin-right: 10px; /* Odstęp między elementami */
+    margin-bottom: 10px; /* Odstęp między wierszami */
+    
+}
+  .about_me_container .my_skills .right_panel .skill p{
+    color: white;
+    font-size: 25px;
+    display: flex;
+    text-align: center;
+    justify-content: center; 
+}
+
+

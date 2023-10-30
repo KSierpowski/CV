@@ -132,3 +132,24 @@ viewButton.addEventListener('click', () => {
     displayProject(); 
 });
 
+const mySkillsSection = document.querySelector('.right_panel');
+
+skills.forEach(skill => {
+    const skillDiv = document.createElement('div');
+    skillDiv.classList.add('skill');
+
+  
+    // Tworzymy opis
+    const text = document.createElement('p');
+    text.textContent = skill.text;
+  
+ 
+    skillDiv.appendChild(text);
+  
+    // Dodajemy div z powodem do sekcji "why_me"
+    mySkillsSection.appendChild(skillDiv);
+
+    skillDiv.addEventListener('click', () => {
+        window.location.href = skill.url;
+    });
+  });
