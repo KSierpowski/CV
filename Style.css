@@ -249,7 +249,7 @@ header nav ul li a{
 
 .about_me_container{
     display: flex;
-    margin-bottom: 1000px;
+    margin-bottom: 100px;
     justify-content: space-between; /* Dodaj to, aby panele były wyśrodkowane i rozłożone na końcach */
 }
 .about_me_container .about_me {
@@ -338,4 +338,65 @@ header nav ul li a{
     margin-top: -32px;
     display:none;
 }
+.contact {
 
+    margin-bottom: 1000px;
+}
+.contact .contact_title{
+    text-align: center;
+    color: white;
+    font-size:50px;
+}
+
+.contact .contact_title hr{
+    text-align: center;
+    margin: auto;
+    width: 250px;
+    border: solid 2px #1cec00;
+    margin-bottom: 15px;
+}
+
+.contact .contact_area{
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.contact .contact_area input{
+    height: 40px;
+    background: #4e4e4e;
+
+}
+
+.contact .contact_area input .text{
+    height: 40px;
+    background: #ffffff;
+
+}
+.contact .contact_area button{
+    height: 40px;
+    color: white;
+    background: #3693a3;
+    cursor: pointer;
+
+}
+.contact .contact_area textarea{
+    height: 150px;
+    background: #4e4e4e;
+}
+
+.contact .contact_area ::placeholder{
+    font-size: 15px;
+    color: white;
+}
+
+.contact .contact_area textarea:focus {
+    color: #00ffff;; /* Zmień kolor tekstu */
+    font-size: 25px; /* Zmień rozmiar tekstu */
+}
+.contact .contact_area input:focus {
+    color: #00ffff; 
+    font-size: 25px; 
+}

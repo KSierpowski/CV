@@ -172,3 +172,12 @@ skills.forEach(skill => {
         window.location.href = skill.url;
     });
   });
+
+  const inputElements = document.querySelectorAll('.contact .contact_area input[type="text"], .contact .contact_area input[type="email"], .contact .contact_area textarea');
+
+inputElements.forEach(inputElement => {
+    inputElement.addEventListener('input', function() {
+        this.style.color = '#00ffff';
+        this.style.fontSize = '25px';
+    });
+});
