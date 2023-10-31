@@ -139,12 +139,31 @@ skills.forEach(skill => {
     skillDiv.classList.add('skill');
 
   
-    // Tworzymy opis
     const text = document.createElement('p');
     text.textContent = skill.text;
   
+    const text_hover = document.createElement('p2');
+    text_hover.textContent = skill.text_hover;
+
+    const img = document.createElement('img');
+    img.src = skill.img;
  
     skillDiv.appendChild(text);
+    skillDiv.appendChild(text_hover);
+    text_hover.appendChild(img);
+
+
+    skillDiv.addEventListener('mouseenter', () => {
+        text.style.display = 'none';
+        text_hover.style.display = 'block';
+        img.style.display = 'block';
+      });
+    
+      skillDiv.addEventListener('mouseleave', () => {
+        text.style.display = 'block';
+        text_hover.style.display = 'none';
+        img.style.display = 'none';
+      });
   
     // Dodajemy div z powodem do sekcji "why_me"
     mySkillsSection.appendChild(skillDiv);
