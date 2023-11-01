@@ -192,8 +192,8 @@ function redAlert(form) {
     // Zresetuj kolory obramowania pól
     fields.forEach(field => field.style.borderColor = "");
 
-    let allInformation = true;
-
+    allInformation = true;
+    
     // Sprawdź, czy pola są uzupełnione
     fields.forEach(field => {
         if (field.value === "") {
