@@ -1,11 +1,9 @@
 * {
-   
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     transition: all 0.3s ease-in-out;
 }
-
 body{
     font-family: "Courier New", monospace;
     background-color: rgb(20, 20, 20);
@@ -26,7 +24,6 @@ header nav{
     white-space: nowrap;
     margin-left: 80%;
 }
-
 header nav ul li{
     display: inline-block;
 }
@@ -44,8 +41,8 @@ header nav ul li a{
     height: 400px; /* Dostosuj wysokość nagłówka do swoich potrzeb */
     text-align: center; /* Wyrównanie tekstu do środka */
     width: 100%;
+    margin-bottom: 150px;
 }
-
 .text_title .container{
     display: flex;
     align-items: center;
@@ -53,7 +50,7 @@ header nav ul li a{
     height: 100%;
 }
 
-  .text_title .top_text{
+.text_title .top_text{
     -webkit-text-stroke: 1.5px #1cec00; /* width and color */
     font-family: monospace; color: rgb(0, 184, 216);
     font-size: 67px;
@@ -64,7 +61,7 @@ header nav ul li a{
     transform: translate(-50%, -50%);
     text-decoration: none;
 }
-  .text_title .bot_text{
+.text_title .bot_text{
     color: white;
     font-size: 36px;
     position: absolute;
@@ -73,14 +70,13 @@ header nav ul li a{
     transform: translate(-50%, -50%);
     text-decoration: none;
 }
-
 .my_works{
     color: white;  
     margin-top: 40px;
     display: flex;
     justify-content: space-around;
+    margin-bottom: 150px;
 }
-
 .my_works .why_me{
     text-align: center;
     max-width: 33%;
@@ -119,11 +115,10 @@ header nav ul li a{
     flex-direction: column;
     max-width: 33%;
 }
-
 .my_works .my_projects h3{
     font-size: 40px;
     padding-bottom: 30px;
-    }
+}
 .my_works .my_projects .project img{
     display: block;
     margin-left: auto;
@@ -133,7 +128,8 @@ header nav ul li a{
     height: 100%;
     max-height: 320px;
     opacity:70%;
-}.my_works .my_projects .project {
+}
+.my_works .my_projects .project {
     width: 100%;
     height: 100%;
     max-width: 600px;
@@ -142,7 +138,6 @@ header nav ul li a{
     justify-content: center;
     align-items: center;
 }
-
 .my_works .my_projects .project text{
     color:rgb(255, 255, 255);
     background-color: rgba(104, 104, 104, 0.3);
@@ -157,7 +152,6 @@ header nav ul li a{
 .my_works .my_projects .buttons  {
     display: flex;
     justify-content: center;
-
 }
 .my_works .my_projects .buttons .toggle_buttons {
     width: 100%; 
@@ -174,7 +168,7 @@ header nav ul li a{
     padding: 10px;
     width: 100%;
     border-radius: 18px;
-    margin-top: 51%;
+    margin-top: 320px;
     border: 2px solid #00ffff;
     background-color: rgb(54, 54, 54);
     color: #00ffff;
@@ -191,10 +185,8 @@ header nav ul li a{
     height: 80%;
     width: 25%;
     border:none;
-    
     cursor: pointer;
 }
-
 .my_works .my_projects .buttons .toggle_buttons #prevButton{
     background-color: #535353;
     font-size:80px;
@@ -203,18 +195,17 @@ header nav ul li a{
     height: 80%;
     width: 25%;
     border:none;
-    
     cursor: pointer;
 }
-
-.container h4{
+.my_road_container {
+    margin-bottom: 150px;
+}
+.my_road_container h4{
     font-size: 35px;
     color: white;
-    margin-top: 150px;
     margin-bottom: 10px;
     text-align: center;
 }
-
 .my_road {
     background-color: #383838;
     padding: 3px;
@@ -232,14 +223,11 @@ header nav ul li a{
 .my_road img:nth-last-child(-n+5):hover {
     filter: none;
 }
-
 .my_road p{
     text-align: center;
     display: inline-block;
     font-size: 60px;
 }
-
-
 .my_road .im_here{
     position:absolute;
     padding: 12px;
@@ -249,7 +237,7 @@ header nav ul li a{
 
 .about_me_container{
     display: flex;
-    margin-bottom: 100px;
+    margin-bottom: 150px;
     justify-content: space-between; 
 }
 .about_me_container .about_me {
@@ -272,14 +260,12 @@ header nav ul li a{
     align-items: center;
     border: inset #1cec00;
     box-shadow:0px 0px 40px 2px #00d5ff ;
-    justify-content: center;
-    
+    justify-content: center; 
   }
 
 .about_me_container .about_me .left_panel img{
     max-width: 20%;
     padding: 10px;
-
 }
 .about_me_container .about_me .left_panel p{
     color: white;
@@ -300,7 +286,6 @@ header nav ul li a{
     display: flex;
     align-items: center;
     justify-content: center; 
-
 }
 
 .about_me_container .my_skills .right_panel {
@@ -309,11 +294,9 @@ header nav ul li a{
     align-items: center;
   }
   .about_me_container .my_skills .right_panel .skill {
-    
     cursor: pointer;
     height: 40px;
     box-sizing: border-box;
-    
 }
   .about_me_container .my_skills .right_panel .skill p{
     color: white;
@@ -339,7 +322,6 @@ header nav ul li a{
     display:none;
 }
 .contact {
-
     margin-bottom: 1000px;
 }
 .contact .contact_title{
@@ -357,36 +339,34 @@ header nav ul li a{
 }
 
 .contact .contact_area{
-    max-width: 800px;
+    max-width: 50%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    
 }
 
 .contact .contact_area input{
     height: 40px;
     background: #4e4e4e;
     margin-bottom: 5px;
-
+    padding: 3px;
 }
 
 .contact .contact_area input .text{
     height: 40px;
     background: #ffffff;
-
 }
 .contact .contact_area button{
     height: 40px;
     color: white;
     background: #3693a3;
     cursor: pointer;
-
 }
 .contact .contact_area textarea{
     height: 150px;
     background: #4e4e4e;
     resize: none; 
+    padding: 3px;
 }
 
 .contact .contact_area ::placeholder{

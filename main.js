@@ -204,7 +204,7 @@ function redAlert(form) {
     });
 
     if (!allInformation) {
-        alert("Uzupełnij wymagane pola!");
+        alert("Complete the required fields!");
     }
 }
 document.querySelector(".contact_area").addEventListener("submit", function (e) {
@@ -215,11 +215,11 @@ if(allInformation){
 
     emailjs.sendForm("service_jokvpnr","template_2kjetww", this)
     .then(function (response) {
-        alert("Wiadomość została wysłana pomyślnie!");
+        alert("The message was sent successfully!");
         document.querySelector(".contact_area").reset();
     })
     .catch(function (error) {
-        alert("Wystąpił błąd podczas wysyłania wiadomości: " + error);
+        alert("An unexpected error occurred while sending a message: " + error);
         document.querySelector(".contact_area").reset();
     });
 }
