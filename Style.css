@@ -250,12 +250,12 @@ header nav ul li a{
 .about_me_container{
     display: flex;
     margin-bottom: 100px;
-    justify-content: space-between; /* Dodaj to, aby panele były wyśrodkowane i rozłożone na końcach */
+    justify-content: space-between; 
 }
 .about_me_container .about_me {
     display: flex;
-    flex-direction: column; /* Wyśrodkuj elementy pionowo w kontenerze .about_me */
-    align-items: center; /* Wyśrodkuj elementy w poziomie w kontenerze .about_me */
+    flex-direction: column; 
+    align-items: center; 
     width: 50%;
   }
 .about_me_container .about_me h5{
@@ -367,6 +367,7 @@ header nav ul li a{
 .contact .contact_area input{
     height: 40px;
     background: #4e4e4e;
+    margin-bottom: 5px;
 
 }
 
@@ -385,6 +386,7 @@ header nav ul li a{
 .contact .contact_area textarea{
     height: 150px;
     background: #4e4e4e;
+    resize: none; 
 }
 
 .contact .contact_area ::placeholder{
@@ -393,8 +395,8 @@ header nav ul li a{
 }
 
 .contact .contact_area textarea:focus {
-    color: #00ffff;; /* Zmień kolor tekstu */
-    font-size: 25px; /* Zmień rozmiar tekstu */
+    color: #00ffff;
+    font-size: 25px; 
 }
 .contact .contact_area input:focus {
     color: #00ffff; 

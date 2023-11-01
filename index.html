@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <link rel="icon" type = "image/cv-icon" href="./images/cv.jpg" />
     <link rel="stylesheet" href="./style.css">
     <title>CV - Kacper Sierpowski</title>
@@ -91,16 +92,15 @@
             <h3>Contact</h3>
             <hr></hr>
             </div>
-        <div class="contact_area">
+        <form class="contact_area" autocomplete="off">
 
             <input type="text" name="subject" placeholder="Subject..." />
             <input type="text" name="fullName" placeholder="Full Name..." />
-            <input type="text" name="email" placeholder="E-mail Address..." />
-            <textarea name="text" placeholder="Message..."></textarea>
-            <input type="hidden" name="access_token" value="rfwwqt1xnchxirhu3vxu5p7w" />
-            <button id="send_button">Send</button>
+            <input type="email" name="emailAdress" placeholder="E-mail Address..." />
+            <textarea name="message" placeholder="Message..."></textarea>
+            <button type="submit">Send</button>
 
-        </div>
+        </form>
 
 
     </section>
