@@ -167,8 +167,8 @@ header nav ul li a{
 .my_works .my_projects .buttons #viewButton{
     padding: 10px;
     width: 100%;
-    border-radius: 18px;
-    margin-top: 320px;
+    border-radius: 10px;
+    margin-top: 300px;
     border: 2px solid #00ffff;
     background-color: rgb(54, 54, 54);
     color: #00ffff;
@@ -254,6 +254,7 @@ header nav ul li a{
     margin-bottom: 10px;
 }
 
+
 .about_me_container .about_me .left_panel{
     margin-left: 50px;
     display: flex;
@@ -261,6 +262,22 @@ header nav ul li a{
     border: inset #1cec00;
     box-shadow:0px 0px 40px 2px #00d5ff ;
     justify-content: center; 
+    position: relative;
+    border: 2px solid transparent;
+    animation: changeBorder 5s linear infinite;
+    background-color: transparent; /* Ustawia kolor tła na przezroczysty */
+    }
+    
+    @keyframes changeBorder {
+    0% {
+        border-color:#00ffff;
+    }
+    50% {
+        border-color: #1cec00;
+    }
+    100% {
+        border-color: antiquewhite;
+    }
   }
 
 .about_me_container .about_me .left_panel img{
@@ -322,7 +339,7 @@ header nav ul li a{
     display:none;
 }
 .contact {
-    margin-bottom: 1000px;
+    margin-bottom: 150px;
 }
 .contact .contact_title{
     text-align: center;
