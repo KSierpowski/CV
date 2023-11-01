@@ -89,6 +89,7 @@ header nav ul li a{
 .my_works .why_me .reason{
     display: flex;
     margin-top: 50px;
+    align-items: center;
 }
 .my_works .why_me .reason:hover{
     transform: scale(1.2);
@@ -97,11 +98,13 @@ header nav ul li a{
     cursor: pointer;
 }
 .my_works .why_me img{
-    max-width: 10%;
+    max-width: 70px;
+    max-height: 70px;
     margin-right: 10px;
     background-color: #d5d5d5;
     border: 1px solid #000000;
     border-radius: 50%;
+    padding: 2px;
 }
 .my_works .why_me p{
     font-size: 13px;
@@ -181,7 +184,6 @@ header nav ul li a{
     background-color: #535353;
     font-size:80px;
     color: rgb(187, 187, 187);
-    margin-left: 150px;
     height: 80%;
     width: 25%;
     border:none;
@@ -392,10 +394,10 @@ header nav ul li a{
 }
 
 .contact .contact_area textarea:focus {
-    color: #00ffff;
-    font-size: 25px; 
+    color: antiquewhite;
+    font-size: 80px; 
 }
 .contact .contact_area input:focus {
-    color: #00ffff; 
-    font-size: 25px; 
+    color: antiquewhite; 
+    font-size: 30px; 
 }

@@ -177,7 +177,7 @@ skills.forEach(skill => {
 
 inputElements.forEach(inputElement => {
     inputElement.addEventListener('input', function() {
-        this.style.color = '#00ffff';
+        this.style.color = 'antiquewhite';
         this.style.fontSize = '25px';
     });
 });
