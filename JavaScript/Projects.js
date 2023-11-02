@@ -61,14 +61,7 @@ function fadeOut(element) {
   }, 50);
 }
 
-function updateButtonHeight() {
-  const img = displayedProjectDiv.querySelector('img');
-  if (img) {
-      const imgHeight = img.clientHeight;
-      nextButton.style.height = imgHeight + 'px';
-      prevButton.style.height = imgHeight + 'px';
-  }
-}
+
 // Funkcja, która usuwa poprzedni projekt i wyświetla nowy na podstawie aktualnego indeksu
 function displayProject() {
     if (displayedProjectDiv) {

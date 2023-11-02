@@ -60,3 +60,18 @@
     color: antiquewhite; 
     font-size: 30px; 
 }
+
+@media screen and (max-width: 576px) {
+    .contact {
+        margin-bottom: 50px;
+    }
+    .contact .contact_title h3 {
+        font-size: 30px;
+    }
+    .contact .contact_title hr {
+        width: 130px;
+    }
+    .contact .contact_area {
+        max-width: 75%;
+    }
+}

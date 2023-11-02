@@ -121,9 +121,52 @@
     background-color: #535353;
     font-size:80px;
     color: rgb(187, 187, 187);
-    margin-right: 150px;
     height: 80%;
     width: 25%;
     border:none;
     cursor: pointer;
+}
+
+/* Start of design for smartphones */
+@media screen and (max-width: 567px){
+    .my_works{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 120px;
+    }
+    .my_works .why_me{
+        max-width: 100%;
+        margin-right: 10px;
+        margin-bottom: 50px;
+    }
+    .my_works .why_me h2{
+        font-size: 30px;
+        }
+    .my_works .why_me .reason:hover{
+        margin-left: 10px;
+        transform: none;
+        background: none;
+        box-shadow: none;
+        cursor: pointer;
+    }
+    .my_works .my_projects {
+        max-width: 95%;
+    }
+    .my_works .my_projects .project{
+        max-width: 100%;
+
+    }
+    .my_works .my_projects h3{
+        font-size: 30px;
+        }
+    .my_works .my_projects .project text {
+        margin-top: -100px;
+        max-width: 100%;
+      }
+      .my_works .my_projects .buttons #viewButton{
+        margin-top: 50%;
+      }
+      .my_works .my_projects .project img {
+        max-width: 100%;
+      }
 }

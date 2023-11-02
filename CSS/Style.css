@@ -7,6 +7,8 @@
 body{
     font-family: "Courier New", monospace;
     background-color: rgb(20, 20, 20);
+    max-width: 100%; /* Ogranicz szerokość całej strony do 100% */
+    overflow-x: hidden;
     
 }
 .container{
@@ -17,6 +19,7 @@ header{
     background-color: rgb(0 0 0 / 40%);
     padding: 10px;
     width: 100%;
+    max-width: 100%;
     position: fixed;
     z-index: 5;
 }
@@ -49,7 +52,7 @@ header nav ul li a{
     background-position: center; /* Ustawienie pozycji obrazu na środku */
     height: 400px; /* Dostosuj wysokość nagłówka do swoich potrzeb */
     text-align: center; /* Wyrównanie tekstu do środka */
-    width: 100%;
+    max-width: 100%;
     margin-bottom: 150px;
 }
 .text_title .container{
@@ -81,9 +84,12 @@ header nav ul li a{
 }
 
 /* Start of design for smartphones */
-@media screen and  (min-width: 100px) and (max-width: 576px){
+@media screen and (max-width: 567px){
+    header{
+        background-color: rgba(0, 0, 0, 0.7);
+    }
     header img{
-        display:block;
+        display:flex;
         margin-left: auto;
         margin-right: 20px;
         cursor: pointer;
@@ -98,6 +104,19 @@ header nav ul li a{
     }
 
     header nav ul.show-menu li a {
-        display: block;
+        display: flex;
     }
+    .text_title{
+        height: 200px; /* Dostosuj wysokość nagłówka do swoich potrzeb */
+        margin-bottom: 50px;
+    }
+    .text_title .top_text{
+        font-size: 50px;
+        margin-top: 80px;
+    }
+    .text_title .bot_text{
+        font-size: 16px;
+        margin-top: 120px;
+    }
+
 }
