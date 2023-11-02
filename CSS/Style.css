@@ -21,12 +21,21 @@ header{
     z-index: 5;
 }
 header nav{
+    display: flex; /* Ustawienie na flex container */
+    justify-content: right; /* Wyrównanie elementów do środka */
     white-space: nowrap;
-    margin-left: 80%;
 }
 header nav ul li{
     display: inline-block;
 }
+header img{
+    display:none;
+    vertical-align: middle;
+    width: 23px;
+    height: auto;
+}
+
+
 header nav ul li a{
     color: var(--gray, #ffffff);
     font-size: 20px;
@@ -71,3 +80,24 @@ header nav ul li a{
     text-decoration: none;
 }
 
+/* Start of design for smartphones */
+@media screen and  (min-width: 100px) and (max-width: 576px){
+    header img{
+        display:block;
+        margin-left: auto;
+        margin-right: 20px;
+        cursor: pointer;
+    }
+    header nav ul {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+    header nav ul li a{
+        display:none; 
+    }
+
+    header nav ul.show-menu li a {
+        display: block;
+    }
+}
