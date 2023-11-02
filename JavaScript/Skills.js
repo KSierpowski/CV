@@ -50,14 +50,14 @@ skills.forEach(skill => {
 
 
     skillDiv.addEventListener('mouseenter', () => {
-        if (window.innerWidth > 576) {
+        if (window.innerWidth <= 576) {
             text.style.display = 'none';
             text_hover.style.display = 'block';
             img.style.display = 'none';
         } else {
             text.style.display = 'none';
             text_hover.style.display = 'block';
-            img.style.display = 'none';
+            img.style.display = 'block';
         }
     });
     
