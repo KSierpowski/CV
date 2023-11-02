@@ -1,0 +1,129 @@
+.my_works{
+    color: white;  
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 150px;
+}
+.my_works .why_me{
+    text-align: center;
+    max-width: 33%;
+    display: flex;
+    flex-direction: column;
+}
+.my_works .why_me h2{
+    font-size: 40px;
+    }
+.my_works .why_me .reason{
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+}
+.my_works .why_me .reason:hover{
+    transform: scale(1.2);
+    background: linear-gradient(180deg, rgba(64, 44, 83, 0.3) 0%, rgba(64, 44, 83, 0.3) 100%);
+    box-shadow: rgba(50, 50, 93, 0.5) 0px -10px 10px 0px, rgba(50, 50, 93, 0.5) 0px 13px 27px -5px;
+    cursor: pointer;
+}
+.my_works .why_me img{
+    max-width: 70px;
+    max-height: 70px;
+    margin-right: 10px;
+    background-color: #d5d5d5;
+    border: 1px solid #000000;
+    border-radius: 50%;
+    padding: 2px;
+}
+.my_works .why_me p{
+    font-size: 13px;
+    text-wrap: wrap;
+    padding: 15px;
+}
+.my_works .my_projects{
+    position: relative;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    max-width: 33%;
+}
+.my_works .my_projects h3{
+    font-size: 40px;
+    padding-bottom: 30px;
+}
+.my_works .my_projects .project img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 600px;
+    height: 100%;
+    max-height: 320px;
+    opacity:70%;
+}
+.my_works .my_projects .project {
+    width: 100%;
+    height: 100%;
+    max-width: 600px;
+    max-height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.my_works .my_projects .project text{
+    color:rgb(255, 255, 255);
+    background-color: rgba(104, 104, 104, 0.3);
+    font-size: 20px;
+    font-weight: bold;
+    text-wrap: wrap;
+    text-align: center;
+    max-width: 300px;
+    position: absolute;
+    z-index: 2;
+}
+.my_works .my_projects .buttons  {
+    display: flex;
+    justify-content: center;
+}
+.my_works .my_projects .buttons .toggle_buttons {
+    width: 100%; 
+    height: 100%;
+    opacity:30%;
+    display: flex;
+    position: absolute;
+    z-index: 1; 
+}
+.my_works .my_projects .buttons .toggle_buttons:hover {
+    opacity:60%;
+}
+.my_works .my_projects .buttons #viewButton{
+    padding: 10px;
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 300px;
+    border: 2px solid #00ffff;
+    background-color: rgb(54, 54, 54);
+    color: #00ffff;
+    position:absolute;
+    cursor: pointer;
+    z-index: 2;
+}
+.my_works .my_projects .buttons .toggle_buttons #nextButton{
+    margin-left: auto;
+    background-color: #535353;
+    font-size:80px;
+    color: rgb(187, 187, 187);
+    height: 80%;
+    width: 25%;
+    border:none;
+    cursor: pointer;
+}
+.my_works .my_projects .buttons .toggle_buttons #prevButton{
+    background-color: #535353;
+    font-size:80px;
+    color: rgb(187, 187, 187);
+    margin-right: 150px;
+    height: 80%;
+    width: 25%;
+    border:none;
+    cursor: pointer;
+}

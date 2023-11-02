@@ -1,0 +1,104 @@
+
+.about_me_container{
+    display: flex;
+    margin-bottom: 150px;
+    justify-content: space-between; 
+}
+.about_me_container .about_me {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    width: 50%;
+  }
+.about_me_container .about_me h5{
+    font-size: 50px;
+    color:white;
+    text-align: center;
+    z-index: 2;
+    margin-bottom: 10px;
+}
+
+
+.about_me_container .about_me .left_panel{
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    border: inset #1cec00;
+    box-shadow:0px 0px 40px 2px #00d5ff ;
+    justify-content: center; 
+    position: relative;
+    border: 2px solid transparent;
+    animation: changeBorder 5s linear infinite;
+    background-color: transparent; /* Ustawia kolor tła na przezroczysty */
+    }
+    
+    @keyframes changeBorder {
+    0% {
+        border-color:#00ffff;
+    }
+    50% {
+        border-color: #1cec00;
+    }
+    100% {
+        border-color: antiquewhite;
+    }
+  }
+
+.about_me_container .about_me .left_panel img{
+    max-width: 20%;
+    padding: 10px;
+}
+.about_me_container .about_me .left_panel p{
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center; 
+}
+.about_me_container .my_skills{
+    width: 33%;
+    margin-left: 50px;
+    margin-right: 100px;
+}
+.about_me_container .my_skills h6{
+    font-size: 50px;
+    color:white;
+    z-index: 2;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.about_me_container .my_skills .right_panel {
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+  }
+  .about_me_container .my_skills .right_panel .skill {
+    cursor: pointer;
+    height: 40px;
+    box-sizing: border-box;
+}
+  .about_me_container .my_skills .right_panel .skill p{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    justify-content: center; 
+}
+.about_me_container .my_skills .right_panel .skill span{
+    color: black;
+    background-color: aliceblue;
+    font-size: 30px;
+    max-height: 40px;
+    display:none;
+    text-align: center;
+    justify-content: center; 
+    border-radius: 30px;
+    box-shadow:0px 0px 40px 2px #00d5ff ;
+}
+.about_me_container .my_skills .right_panel .skill img{
+    max-width: 30px;
+    margin-left: 18%;
+    margin-top: -32px;
+    display:none;
+}
