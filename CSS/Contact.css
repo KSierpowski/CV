@@ -61,6 +61,23 @@
     font-size: 30px; 
 }
 
+
+/* Start of design for HD larger tablets */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .contact {
+        margin-bottom: 50px;
+    }
+    .contact .contact_title h3 {
+        font-size: 40px;
+    }
+    .contact .contact_title hr {
+        width: 170px;
+    }
+    .contact .contact_area {
+        max-width: 75%;
+    }
+}
+
 @media screen and (max-width: 768px){
     .contact {
         margin-bottom: 50px;

@@ -104,6 +104,39 @@
     display:none;
 }
 
+/* Start of design for HD larger tablets */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .about_me_container{
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+    .about_me_container .about_me{
+        width: 100%;
+    }
+    .about_me_container .about_me h5{
+        font-size: 40px;
+    }
+    .about_me_container .about_me .left_panel {
+        flex-direction: column;
+        margin-right: 50px;
+        margin-bottom: 50px;
+    }
+    .about_me_container .about_me .left_panel img {
+        max-width: 75%;
+    }
+
+
+    .about_me_container .my_skills{
+        max-width: 100%;    
+        width: 100%;
+        margin:0;
+    }
+    .about_me_container .my_skills h6{
+        font-size: 40px;
+    }
+
+}
+
 /* Start of design for tablets */
 @media screen and  (max-width: 768px){
     .about_me_container{
@@ -129,6 +162,9 @@
         margin:0;
     }
 }
+
+
+
 @media screen and (max-width: 567px){
     
     .about_me_container{

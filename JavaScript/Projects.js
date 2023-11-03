@@ -86,9 +86,9 @@ function displayProject() {
     projectDiv.style.opacity = 0;
     projectsSection.appendChild(projectDiv);
 
-    img.onload = function() {
-      updateButtonHeight();
-  };
+//     img.onload = function() {
+//       updateButtonHeight();
+//   };
 
     fadeIn(projectDiv);
     displayedProjectDiv = projectDiv; // Aktualizuj referencję do wyświetlanego projektu
@@ -96,9 +96,9 @@ function displayProject() {
   
 }
 // Po pierwszym załadowaniu strony także aktualizuj wysokość przycisków
-window.addEventListener('load', function() {
-  updateButtonHeight();
-});
+// window.addEventListener('load', function() {
+//   updateButtonHeight();
+// });
 displayProject(); 
 
 

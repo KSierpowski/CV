@@ -83,6 +83,12 @@ header nav ul li a{
     transform: translate(-50%, -50%);
     text-decoration: none;
 }
+/* Start of design for HD larger tablets */
+@media screen and (max-width: 1024px) {
+    .text_title {
+        margin-bottom: 50px;
+    }
+  }
 
 /* Start of design for tablets */
 @media screen and  (max-width: 768px){

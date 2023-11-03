@@ -38,7 +38,7 @@
     padding: 12px;
     margin-bottom:30px;
     font-weight: bold;
-    color: white;;
+    color: white;
 }
 .my_road  p{
     text-align: center;
@@ -53,7 +53,24 @@
     font-size: 60px;
     line-height: 80px;
     color: aliceblue;
+    margin-top: 10px;
 }
+
+/* Start of design for HD larger tablets */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .my_road_container h4{
+        font-size: 40px;
+    }
+    .my_road .group .item {
+        margin: 10px;
+    }
+}
+@media screen and (max-width: 890px){
+    .my_road .im_here{
+        display: none;
+    }
+}
+
 /* Start of design for tablets */
 @media screen and  (max-width: 768px){
     .my_road {
@@ -61,6 +78,7 @@
         justify-content: center;
         flex-wrap: wrap;
     }
+    
     .my_road .group .item {
         flex: 0 0 calc(33.33% - 20px);
         margin: 10px;

@@ -23,7 +23,7 @@ const skills = [
     {
         text: "Sound Engr.",
         url: "https://soundcloud.com/ksierpowski/sets/mixmaster-work",
-        text_hover: "Show SoundCloud",
+        text_hover: "SoundCloud",
         img: "./images/soundcloud_icon.png",
     },
 ]
@@ -54,7 +54,17 @@ skills.forEach(skill => {
             text.style.display = 'none';
             text_hover.style.display = 'block';
             img.style.display = 'none';
-        } else {
+        } 
+        else if (window.innerWidth >= 577 && window.innerWidth <= 1024) {
+            text.style.display = 'none';
+            text_hover.style.display = 'block';
+            img.style.display = 'block';
+        } else if (window.innerWidth >= 1024 && window.innerWidth < 1250) {
+            text.style.display = 'none';
+            text_hover.style.display = 'block';
+            img.style.display = 'none';
+        } 
+        else if (window.innerWidth > 1250) {
             text.style.display = 'none';
             text_hover.style.display = 'block';
             img.style.display = 'block';
