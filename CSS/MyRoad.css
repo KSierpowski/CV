@@ -4,21 +4,24 @@
 .my_road_container h4{
     font-size: 35px;
     color: white;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
     text-align: center;
 }
 .my_road {
     padding: 3px;
     margin-bottom: 100px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between; /* Zmiana na space-between */
     align-items: center;
     background-color: #a6a6a61c;
+    position: relative; /* Dodaj pozycję relatywną */
 }
 .my_road .group {
     display: flex;
-    align-items: center; /* Wycentrowanie w pionie */
-    justify-content: center; /* Wycentrowanie w poziomie */
+    align-items: center;
+    justify-content: center;
+    flex: 1; /* Ustawić flex na 1, aby grupy dostosowywały się do szerokości kontenera */
+    padding: 0 50px; /* Dodaj odstęp poziomy między grupami */
 }
 .my_road .group img{
     max-width: 80px;
@@ -33,12 +36,13 @@
     filter: none;
 }
 
-.my_road .im_here{
-    position:absolute;
-    padding: 12px;
-    margin-bottom:30px;
+.my_road .im_here {
+    position: absolute;
     font-weight: bold;
     color: white;
+    left: 50%; /* Ustawić na połowie szerokości kontenera */
+    transform: translateX(-50%); /* Wycentrować w poziomie */
+    top: -25px;
 }
 .my_road  p{
     text-align: center;
@@ -47,13 +51,14 @@
     line-height: 80px;
     color: aliceblue;
 }
-.my_road  .arrow{
-    text-align: center;
-    display: inline-block;
-    font-size: 60px;
-    line-height: 80px;
-    color: aliceblue;
-    margin-top: 10px;
+.my_road .arrow {
+    top:-20px;
+    font-size: 80px;
+    position: absolute;
+    font-weight: bold;
+    color: white;
+    left: 50%; /* Ustawić na połowie szerokości kontenera */
+    transform: translateX(-50%); /* Wycentrować w poziomie */
 }
 
 /* Start of design for HD larger tablets */
@@ -65,11 +70,19 @@
         margin: 10px;
     }
 }
-@media screen and (max-width: 890px){
-    .my_road .im_here{
-        display: none;
+@media screen and (max-width: 960px){
+
+    .my_road .group {
+        padding: 0 10px; /* Dodaj odstęp poziomy między grupami */
     }
 }
+
+@media screen and (min-width: 1024){
+    .my_road .group {
+        padding: 0 50px; /* Dodaj odstęp poziomy między grupami */
+    }
+}
+
 
 /* Start of design for tablets */
 @media screen and  (max-width: 768px){
