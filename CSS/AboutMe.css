@@ -103,6 +103,32 @@
     margin-top: -32px;
     display:none;
 }
+
+/* Start of design for tablets */
+@media screen and  (max-width: 768px){
+    .about_me_container{
+        flex-direction: column;
+    }
+    .about_me_container .about_me{
+        width: 100%;
+    }
+    .about_me_container .about_me h5{
+        font-size: 30px;
+    }
+    .about_me_container .about_me .left_panel {
+        flex-direction: column;
+        margin-right: 50px;
+        margin-bottom: 50px;
+    }
+    .about_me_container .about_me .left_panel img {
+        max-width: 75%;
+    }
+    .about_me_container .my_skills{
+        max-width: 100%;    
+        width: 100%;
+        margin:0;
+    }
+}
 @media screen and (max-width: 567px){
     
     .about_me_container{
@@ -124,7 +150,8 @@
     }
     .about_me_container .my_skills{
         max-width: 100%;    
-        width: 75%;
+        width: 100%;
+        margin:0;
     }
 }
 

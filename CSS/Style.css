@@ -79,8 +79,19 @@ header nav ul li a{
     position: absolute;
     margin-top: 220px;
     left: 50%;
+    width: 100%;
     transform: translate(-50%, -50%);
     text-decoration: none;
+}
+
+/* Start of design for tablets */
+@media screen and  (max-width: 768px){
+    .text_title .top_text{
+        margin-top:150px;
+    }
+    .text_title .bot_text{
+        margin-top: 200px;
+    }
 }
 
 /* Start of design for smartphones */
@@ -107,7 +118,7 @@ header nav ul li a{
         display: flex;
     }
     .text_title{
-        height: 200px; /* Dostosuj wysokość nagłówka do swoich potrzeb */
+        height: 200px; 
         margin-bottom: 50px;
     }
     .text_title .top_text{
@@ -115,7 +126,7 @@ header nav ul li a{
         margin-top: 80px;
     }
     .text_title .bot_text{
-        font-size: 16px;
+        font-size: 26px;
         margin-top: 120px;
     }
 

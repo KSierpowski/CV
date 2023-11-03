@@ -8,47 +8,95 @@
     text-align: center;
 }
 .my_road {
-    background-color: #383838;
     padding: 3px;
     margin-bottom: 100px;
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    background-color: #a6a6a61c;
 }
-.my_road img{
+.my_road .group {
+    display: flex;
+    align-items: center; /* Wycentrowanie w pionie */
+    justify-content: center; /* Wycentrowanie w poziomie */
+}
+.my_road .group img{
     max-width: 80px;
     max-height: 80px;
+    margin-right: 10%;
+  margin-left: 10%;
 }
-.my_road img:nth-last-child(-n+5) {
+.my_road .group:last-child img {
     filter: grayscale(100%);
 }
 .my_road img:nth-last-child(-n+5):hover {
     filter: none;
 }
-.my_road p{
-    text-align: center;
-    display: inline-block;
-    font-size: 60px;
-}
+
 .my_road .im_here{
     position:absolute;
     padding: 12px;
+    margin-bottom:30px;
     font-weight: bold;
     color: white;;
 }
-
+.my_road  p{
+    text-align: center;
+    display: inline-block;
+    font-size: 60px;
+    line-height: 80px;
+    color: aliceblue;
+}
+.my_road  .arrow{
+    text-align: center;
+    display: inline-block;
+    font-size: 60px;
+    line-height: 80px;
+    color: aliceblue;
+}
+/* Start of design for tablets */
+@media screen and  (max-width: 768px){
+    .my_road {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .my_road .group .item {
+        flex: 0 0 calc(33.33% - 20px);
+        margin: 10px;
+    }
+    .my_road .arrow{
+        display:none;
+    }
+    .my_road .im_here{
+        display: none;
+    }
+    
+}
+/* Start of design for smartphones */
 @media screen and (max-width: 567px){
     .my_road {
         display: flex;
+        justify-content: center;
         flex-wrap: wrap;
     }
+
+    .my_road .group img {
+        flex: 0 0 calc(33.33% - 20px);
+        margin: 10px;
+    }
+
     .my_road_container {
         margin-bottom: 50px;
     }
     .my_road_container h4{
         font-size: 30px;
     }
-    .my_road img{
+    .my_road .group img{
         margin-bottom: 10px;
+    }
+    .my_road .arrow{
+        display:none;
     }
     .my_road .im_here{
         display: none;
