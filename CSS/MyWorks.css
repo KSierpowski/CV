@@ -104,10 +104,14 @@
     margin-top: 300px;
     border: 2px solid #00ffff;
     background-color: rgb(54, 54, 54);
-    color: #00ffff;
+    color: azure;
     position:absolute;
     cursor: pointer;
     z-index: 2;
+}
+.my_works .my_projects .buttons #viewButton:hover{
+    font-size: 25px;
+    color:#00ffff
 }
 .my_works .my_projects .buttons .toggle_buttons #nextButton{
     margin-left: auto;
@@ -140,9 +144,10 @@
     min-width: 500px;
     }
 }
-@media screen and (max-width: 1254px){
+
+@media screen and (min-width: 1024px) and (max-width: 1254px){
     .my_works .my_projects .buttons .toggle_buttons {
-    max-height: 80%;
+        max-height: 80%;
     }
 }
 
