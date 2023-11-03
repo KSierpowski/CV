@@ -27,22 +27,26 @@
     box-shadow:0px 0px 40px 2px #00d5ff ;
     justify-content: center; 
     position: relative;
-    border: 2px solid transparent;
-    animation: changeBorder 5s linear infinite;
+    border: 1px solid transparent;
+    animation: changeBorder 5s linear infinite alternate ;
     background-color: transparent; /* Ustawia kolor tła na przezroczysty */
     }
     
     @keyframes changeBorder {
-    0% {
-        border-color:#00ffff;
+        0% {
+            border-color: #00ffff;
+            box-shadow: 0px 0px 40px 2px #00d5ff;
+        }
+        50% {
+            border-color: #1cec00;
+            box-shadow: 0px 0px 40px 2px #1cec00;
+        }
+        100% {
+            border-color: azure;
+            box-shadow: 0px 0px 40px 2px antiquewhite;
+        }
+
     }
-    50% {
-        border-color: #1cec00;
-    }
-    100% {
-        border-color: antiquewhite;
-    }
-  }
 
 .about_me_container .about_me .left_panel img{
     max-width: 40%;
