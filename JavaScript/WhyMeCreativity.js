@@ -5,6 +5,14 @@ const carousel_indicators = document.querySelectorAll('.carousel');
 let currentIndex = 0;
 let photos = photoGallery.querySelectorAll('img');
 
+// Sprawdź, czy strona jest odświeżana po raz pierwszy
+if (!localStorage.getItem('isPageRefreshed')) {
+    // Jeśli tak, odśwież stronę
+    location.reload();
+    // Ustaw flagę w localStorage, aby oznaczyć, że strona została odświeżona
+    localStorage.setItem('isPageRefreshed', 'true');
+}
+
 function displayPhoto() {
     // Ukryj wszystkie zdjęcia w galerii
     photos.forEach(photo => {
@@ -26,8 +34,6 @@ function displayPhoto() {
 }
 
 
-
-
 displayPhoto();
 nextButton.addEventListener('click', () => {
 
@@ -44,6 +50,7 @@ nextButton.addEventListener('click', () => {
 
     updateActiveDot();
     displayPhoto();
+    
 
 });
 prevButton.addEventListener('click', () => {
