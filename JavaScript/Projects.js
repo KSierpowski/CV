@@ -32,7 +32,6 @@ const projectsSection = document.querySelector('.my_projects');
 const nextButton = document.querySelector('#nextButton');
 const prevButton = document.querySelector('#prevButton');
 const viewButton = document.querySelector('#viewButton');
-
 let currentIndex = 0; 
 let displayedProjectDiv = null; 
 
@@ -76,6 +75,8 @@ function displayProject() {
     const img = document.createElement('img');
     img.src = project.image;
 
+    
+    img.setAttribute('preload', 'auto');
 
     const text = document.createElement('text');
     text.textContent = project.text;
