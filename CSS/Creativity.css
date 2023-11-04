@@ -1,7 +1,11 @@
 .text_title{
     margin-bottom: 50px;
 }
-
+.photo_gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .photo_gallery ul li{
     display: flex;
     flex-direction: column;
@@ -12,13 +16,13 @@
 }
 
 .photo_gallery .buttons{
-    margin-top: -36.7%;
-    max-height: 571px;
   display: flex;
   justify-content: space-between;
-  margin-left: 22.4%;
-  margin-right: 22.4%;
-  opacity: 40%
+  align-items: center;
+  max-width: 52.5%; 
+  opacity: 40%;
+  width: 100%;
+  position:absolute;
 }
 
 .photo_gallery .buttons .next_button{
@@ -27,6 +31,7 @@
     border: none;
     color: white;
     font-size: 50px;
+    margin: 0 0 0 15%;
 }
 .photo_gallery .buttons .prev_button{
     width: 15%;
@@ -34,6 +39,7 @@
     border: none;
     color: white;
     font-size: 50px;
+    margin: 0 15% 0 0;
 }
 .photo_gallery .buttons .next_button:hover{
     opacity:20%
@@ -44,7 +50,7 @@
 .carousel_indicators {
     display: flex;
     justify-content: center;
-    margin-top: 8%;
+    margin-top: 2%;
   }
   
   .carousel {

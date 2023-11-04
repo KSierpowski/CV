@@ -5,6 +5,25 @@ const carousel_indicators = document.querySelectorAll('.carousel');
 let currentIndex = 0;
 let photos = photoGallery.querySelectorAll('img');
 
+function displayPhoto() {
+    // Ukryj wszystkie zdjęcia w galerii
+    photos.forEach(photo => {
+        photo.style.display = 'none';
+    });
+
+    // Wyświetl aktualne zdjęcie
+    if (currentIndex >= 0 && currentIndex < photos.length) {
+        const currentPhoto = photos[currentIndex];
+
+        // Ustaw wysokość przycisku na wysokość aktualnego zdjęcia po załadowaniu obrazka
+        currentPhoto.onload = function() {
+            prevButton.style.height = currentPhoto.height + 'px';
+            nextButton.style.height = currentPhoto.height + 'px';
+        };
+
+        currentPhoto.style.display = 'block';
+    }
+}
 
 function displayPhoto() {
     // Ukryj wszystkie zdjęcia w galerii
@@ -80,6 +99,8 @@ function updateActiveDot() {
     // Dodaj klasę "active" do aktualnego carousel
     carousel_indicators[currentIndex].classList.add('active');
 }
+
+
 
 // Sprawdź, czy strona jest odświeżana po raz pierwszy
 if (!localStorage.getItem('isPageRefreshed')) {
