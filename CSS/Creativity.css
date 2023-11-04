@@ -1,0 +1,10 @@
+.photo_gallery ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.photo_gallery ul li img {
+max-width: 50%;
+display:none;
+}

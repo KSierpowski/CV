@@ -7,7 +7,7 @@ const navLinks = document.querySelectorAll("header nav ul li a");
 let isMenuOpen = false;
 
 hamburgerIcon.addEventListener("click", () => {
-    isMenuOpen = !isMenuOpen; // Odwróć stan flagi
+    isMenuOpen = !isMenuOpen; // Odwróć stan 
 
     if (isMenuOpen) {
         navLinks.forEach(link => {
