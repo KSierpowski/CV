@@ -15,16 +15,18 @@ function displayPhoto() {
     if (currentIndex >= 0 && currentIndex < photos.length) {
         photos[currentIndex].style.display = 'block';
     }
-}
 
-
-
-// Ustaw wysokość przycisku na wysokość aktualnego zdjęcia
+    // Ustaw wysokość przycisku na wysokość aktualnego zdjęcia
 
     if (currentIndex >= 0 && currentIndex < photos.length) {
         prevButton.style.height = photos[currentIndex].height + 'px';
         nextButton.style.height = photos[currentIndex].height + 'px';
     }
+
+}
+
+
+
 
 displayPhoto();
 nextButton.addEventListener('click', () => {
