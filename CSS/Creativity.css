@@ -1,10 +1,28 @@
-.photo_gallery ul li {
+.text_title{
+    margin-bottom: 50px;
+}
+
+.photo_gallery ul li{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+.photo_gallery ul img {
+    max-width: 55%;
+}
 
-.photo_gallery ul li img {
-max-width: 50%;
-display:none;
+.photo_gallery .buttons{
+    margin-top: -36.7%;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 22.4%;
+  margin-right: 22.4%;
+  opacity: 40%
+}
+
+.photo_gallery .buttons .next_button{
+    width: 15%;
+}
+.photo_gallery .buttons .prev_button{
+    width: 15%;
 }
