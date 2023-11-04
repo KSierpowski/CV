@@ -12,8 +12,8 @@
 }
 
 .photo_gallery .buttons{
-margin-top: -36.7%;
-max-height: 571px;
+    margin-top: -36.7%;
+    max-height: 571px;
   display: flex;
   justify-content: space-between;
   margin-left: 22.4%;
@@ -44,7 +44,7 @@ max-height: 571px;
 .carousel_indicators {
     display: flex;
     justify-content: center;
-    margin-top: 10px;
+    margin-top: 8%;
   }
   
   .carousel {

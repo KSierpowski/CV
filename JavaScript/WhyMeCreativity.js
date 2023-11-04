@@ -5,13 +5,6 @@ const carousel_indicators = document.querySelectorAll('.carousel');
 let currentIndex = 0;
 let photos = photoGallery.querySelectorAll('img');
 
-// Sprawdź, czy strona jest odświeżana po raz pierwszy
-if (!localStorage.getItem('isPageRefreshed')) {
-    // Jeśli tak, odśwież stronę
-    location.reload();
-    // Ustaw flagę w localStorage, aby oznaczyć, że strona została odświeżona
-    localStorage.setItem('isPageRefreshed', 'true');
-}
 
 function displayPhoto() {
     // Ukryj wszystkie zdjęcia w galerii
@@ -86,4 +79,12 @@ function updateActiveDot() {
 
     // Dodaj klasę "active" do aktualnego carousel
     carousel_indicators[currentIndex].classList.add('active');
+}
+
+// Sprawdź, czy strona jest odświeżana po raz pierwszy
+if (!localStorage.getItem('isPageRefreshed')) {
+    // Jeśli tak, odśwież stronę
+    location.reload();
+    // Ustaw flagę w localStorage, aby oznaczyć, że strona została odświeżona
+    localStorage.setItem('isPageRefreshed', 'true');
 }
