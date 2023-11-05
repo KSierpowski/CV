@@ -19,9 +19,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 52.5%; 
+  max-width: 53%; 
   width: 100%;
   position:absolute;
+  margin: 0 10px;
 }
 
 .photo_gallery .buttons .next_button{
@@ -30,7 +31,7 @@
     border: none;
     color: white;
     font-size: 50px;
-    margin: 0 0 0 15%;
+    margin: 0;
 }
 .photo_gallery .buttons .prev_button{
     width: 15%;
@@ -38,7 +39,7 @@
     border: none;
     color: white;
     font-size: 50px;
-    margin: 0 15% 0 0;
+    margin: 0;
 }
 .photo_gallery .buttons .next_button:hover{
     background-color: rgba(0,0,0,0.2);
