@@ -53,6 +53,7 @@
     display: flex;
     justify-content: center;
     margin-top: 2%;
+    margin-bottom: 150px;
   }
   
   .carousel {
@@ -67,3 +68,81 @@
   .carousel.active {
     background-color: #0f5593;
 }
+
+.container{
+    width:100%;
+    display: flex;
+    margin-bottom: 150px;
+}
+
+.description{
+    margin: 0 2%;
+    width: 50%;
+    border-radius: 50%;
+    animation: changeBorder 5s linear infinite alternate ;
+}
+.description p{
+    font-size:20px;
+    color: azure;
+    text-align: center;
+    margin: 10% 10%;
+}
+
+@keyframes changeBorder {
+    0% {
+        box-shadow: 0px 0px 40px 2px #5700f8;
+    }
+    50% {
+        box-shadow: 0px 0px 40px 2px #756a06;
+    }
+    100% {
+        box-shadow: 0px 0px 40px 2px rgb(187, 5, 75);
+    }
+
+}
+
+.video{
+    width: 50%;
+}
+.video iframe{
+    display: flex;
+    margin:auto;
+}
+
+@media screen and (max-width: 1024px) {
+    .carousel_indicators{
+        margin-bottom: 50px;
+    }
+    .photo_gallery ul img {
+        max-width: 75%;
+    }
+    .photo_gallery .buttons{
+        max-width: 75%; 
+    }
+    .container{
+    flex-direction: column;
+    align-items: center;
+    }
+    .container  .description{
+        margin-bottom: 50px;
+        width: 85%;
+    }
+    .video {
+        width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 567px) {
+
+    .carousel_indicators{
+        margin-bottom: 50px;
+    }
+    .description{
+        font-size: 18px;
+        border-radius: 5%;
+    }
+
+    .video iframe{
+        width: 100%;
+    }
+  }
