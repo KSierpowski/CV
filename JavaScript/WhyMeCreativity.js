@@ -5,6 +5,7 @@ const carousel_indicators = document.querySelectorAll('.carousel');
 let currentIndex = 0;
 let photos = photoGallery.querySelectorAll('img');
 
+
 function displayPhoto() {
     // Ukryj wszystkie zdjęcia w galerii
     photos.forEach(photo => {
@@ -23,30 +24,12 @@ function displayPhoto() {
 
         currentPhoto.style.display = 'block';
     }
-}
-
-function displayPhoto() {
-    // Ukryj wszystkie zdjęcia w galerii
-    photos.forEach(photo => {
-        photo.style.display = 'none';
-    });
-
-    // Wyświetl aktualne zdjęcie
-    if (currentIndex >= 0 && currentIndex < photos.length) {
-        photos[currentIndex].style.display = 'block';
-    }
-
-    // Ustaw wysokość przycisku na wysokość aktualnego zdjęcia
-
-    if (currentIndex >= 0 && currentIndex < photos.length) {
-        prevButton.style.height = photos[currentIndex].height + 'px';
-        nextButton.style.height = photos[currentIndex].height + 'px';
-    }
+    
 
 }
-
 
 displayPhoto();
+
 nextButton.addEventListener('click', () => {
 
     
@@ -75,6 +58,7 @@ prevButton.addEventListener('click', () => {
   });
 
 
+
   carousel_indicators.forEach((carousel, index) => {
     carousel.addEventListener('click', () => {
         currentIndex = index; // Aktualny indeks na podstawie klikniętego kółka
@@ -101,11 +85,3 @@ function updateActiveDot() {
 }
 
 
-
-// Sprawdź, czy strona jest odświeżana po raz pierwszy
-if (!localStorage.getItem('isPageRefreshed')) {
-    // Jeśli tak, odśwież stronę
-    location.reload();
-    // Ustaw flagę w localStorage, aby oznaczyć, że strona została odświeżona
-    localStorage.setItem('isPageRefreshed', 'true');
-}

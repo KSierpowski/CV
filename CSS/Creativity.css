@@ -20,14 +20,13 @@
   justify-content: space-between;
   align-items: center;
   max-width: 52.5%; 
-  opacity: 40%;
   width: 100%;
   position:absolute;
 }
 
 .photo_gallery .buttons .next_button{
     width: 15%;
-    background-color: black;
+    background-color: rgba(0,0,0,0.4);
     border: none;
     color: white;
     font-size: 50px;
@@ -35,17 +34,17 @@
 }
 .photo_gallery .buttons .prev_button{
     width: 15%;
-    background-color: black;
+    background-color: rgba(0,0,0,0.4);
     border: none;
     color: white;
     font-size: 50px;
     margin: 0 15% 0 0;
 }
 .photo_gallery .buttons .next_button:hover{
-    opacity:20%
+    background-color: rgba(0,0,0,0.2);
 }
 .photo_gallery .buttons .prev_button:hover{
-    opacity:20%
+    background-color: rgba(0,0,0,0.2);
     }
 .carousel_indicators {
     display: flex;
