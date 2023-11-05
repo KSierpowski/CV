@@ -26,6 +26,7 @@
 }
 
 .photo_gallery .buttons .next_button{
+    height: 138px;
     width: 15%;
     background-color: rgba(0,0,0,0.4);
     border: none;
@@ -34,6 +35,7 @@
     margin: 0;
 }
 .photo_gallery .buttons .prev_button{
+    height: 138px;
     width: 15%;
     background-color: rgba(0,0,0,0.4);
     border: none;
