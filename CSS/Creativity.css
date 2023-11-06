@@ -82,7 +82,7 @@
     animation: changeBorder 5s linear infinite alternate ;
 }
 .description p{
-    font-size:20px;
+    font-size:17px;
     color: azure;
     text-align: center;
     margin: 10% 10%;
