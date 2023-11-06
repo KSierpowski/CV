@@ -8,10 +8,10 @@ const reasons = [
     },
     {
       id: 1,
-      image: "./images/helpful_icon.png",
+      image: "./images/experience_icon.png",
       description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
       dolores eaque. Eligendi ab officia minus.`,
-      url: "./HTML/helpful.html",
+      url: "./HTML/experience.html",
     },
     {
       id: 2,

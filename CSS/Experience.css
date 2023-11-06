@@ -1,0 +1,42 @@
+.experience_info{
+    width: 100%;
+    margin-bottom: 75px;;
+}
+
+.experience_info p{
+    color: azure;
+    max-width: 75%;
+    text-align: center;
+    margin:auto;
+    margin-bottom: 75px;
+}
+
+.experience_info hr{
+    max-width: 85%;
+    margin: auto;
+    color:#a6a6a63b;
+}
+
+.work_container{
+    margin-bottom: 150px;
+}
+
+.work_container .work_experience{
+    display: flex;
+  flex-direction: column;
+  max-width: 75%;
+  margin: auto;
+}
+
+.work_container .work_experience .work{
+padding-bottom: 30px;
+}
+
+.work_container .work_experience .work:hover{
+    transform: scale(1.2);
+    }
+
+.work_container .work_experience p{
+    text-align: left;
+    color: azure;
+}
