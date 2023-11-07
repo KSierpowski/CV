@@ -133,12 +133,6 @@
     top: 0;
 }
 
-.caption-container {
-    text-align: center;
-    background-color: black;
-    padding: 2px 16px;
-    color: white;
-}
   
 .videos {
     display: flex;
