@@ -45,6 +45,8 @@
 
     <section class="tattoo_gallery">
         <h2 class="tattoo_gallery_title">Tattoo Gallery</h2>
+
+
         <!-- Images used to open the lightbox -->
         <div class="thumbnails_images">
           <div class="image">
@@ -63,7 +65,23 @@
             <img src="../images/Learners/tattoo_5.jpg" onclick="openGalerry();currentSlide(4)">
           </div>
         </div>
-        
+        <div class="videos">
+            <video width="170" height="380" autoplay loop muted>
+                <source src="../images/Learners/movie1.MP4" type="video/mp4">
+            </video>
+            <video id="mid" width="320" height="240" controls>
+                <source src="../images/Learners/movie2.MP4" type="video/mp4">
+            </video>
+            <video id="mid" width="320" height="240" controls>
+                <source src="../images/Learners/movie3.MP4" type="video/mp4">
+            </video>
+            <video width="170" height="380" autoplay loop muted>
+                <source src="../images/Learners/movie4.MP4" type="video/mp4">
+            </video>
+
+        </div>
+
+
         <!-- The Modal/Lightbox -->
         <div id="my_gallery" class="gallery">
           <span class="close cursor" onclick="closeGallery()">&times;</span>

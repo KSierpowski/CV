@@ -17,6 +17,9 @@
     color:#a6a6a63b;
 }
 
+.tattoo_gallery {
+    margin-bottom: 150px;
+}
 
 .tattoo_gallery h2{
     font-size: 30px;
@@ -28,7 +31,6 @@
   .thumbnails_images {
     display: flex;
     justify-content: center;
-    margin-bottom: 150px;
     margin-left: 10%;
     margin-right: 10%;
   }
@@ -43,6 +45,7 @@
 .thumbnails_images .image img:hover {
     cursor: pointer;
     box-shadow: rgba(50, 50, 93, 0.5) 0px -10px 10px 0px, rgba(50, 50, 93, 0.5) -10px 13px 27px -10px;
+    transform:scale(1.2);
 }
 .gallery {
     display: none;
@@ -137,4 +140,12 @@
     color: white;
 }
   
+.videos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.videos video{
+    margin:10px;
+}
