@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/Style.css">
+    <link rel="stylesheet" href="../CSS/Footer.css">
+    <link rel="stylesheet" href="../CSS/Learners.css">
     <title>Document</title>
 </head>
 <body>
@@ -22,14 +24,131 @@
     </header>
     <main class="container">            
         <section class="text_title">
-            <a href="index.html">
+            <a href="../index.html">
                 <span class="top_text">KSierpowski</span>
                 <span class="bot_text">future frontend dev</span> 
             </a>
 
     </main>
-    
-    <script src = "./JavaScript/WhyMe.js"></script>
-    <script src="./JavaScript/Projects.js"></script>
+
+    <section class="learners_info">
+        <div class="text">
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error delectus et, repellendus quo neque quam accusamus sequi
+                at dolorum mollitia pariatur in excepturi eius harum magni reiciendis fugit fuga explicabo? Lorem ipsum, dolor sit amet
+                consectetur adipisicing elit. Tenetur, natus officia repudiandae maiores necessitatibus architecto sapiente optio aliquid
+                rerum eos fugiat nesciunt at quam repellendus ut aperiam perferendis est molestias?
+            </p>
+        </div>
+        <hr></hr>
+    </section>
+
+    <section class="tattoo_gallery">
+        <h2 class="tattoo_gallery_title">Tattoo Gallery</h2>
+        <!-- Images used to open the lightbox -->
+        <div class="thumbnails_images">
+          <div class="image">
+            <img src="../images/Learners/tattoo_1.jpg" onclick="openGalerry();currentSlide(1)">
+          </div>
+          <div class="image">
+            <img src="../images/Learners/tattoo_2.jpg" onclick="openGalerry();currentSlide(2)" >
+          </div>
+          <div class="image">
+            <img src="../images/Learners/tattoo_3.jpg" onclick="openGalerry();currentSlide(3)" >
+          </div>
+          <div class="image">
+            <img src="../images/Learners/tattoo_4.jpg" onclick="openGalerry();currentSlide(4)" >
+          </div>
+          <div class="image">
+            <img src="../images/Learners/tattoo_5.jpg" onclick="openGalerry();currentSlide(4)">
+          </div>
+        </div>
+        
+        <!-- The Modal/Lightbox -->
+        <div id="my_gallery" class="gallery">
+          <span class="close cursor" onclick="closeGallery()">&times;</span>
+          <div class="gallery_content">
+        
+            <div class="my_Slides">
+              <div class="number_text">1 / 5</div>
+              <img src="../images/Learners/tattoo_1.jpg" style="width:75%">
+            </div>
+        
+            <div class="my_Slides">
+              <div class="number_text">2 / 5</div>
+              <img src="../images/Learners/tattoo_2.jpg" style="width:75%">
+            </div>
+        
+            <div class="my_Slides">
+              <div class="number_text">3 / 5</div>
+              <img src="../images/Learners/tattoo_3.jpg" style="width:75%">
+            </div>
+        
+            <div class="my_Slides">
+              <div class="number_text">4 / 5</div>
+              <img src="../images/Learners/tattoo_4.jpg" style="width:75%">
+            </div>
+            <div class="my_Slides">
+                <div class="number_text">5 / 5</div>
+                <img src="../images/Learners/tattoo_5.jpg" style="width:75%">
+              </div>
+        
+            <!-- Next/previous controls -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+        
+        
+         
+          </div>
+        </div>
+    </section>
+
+
+
+    <iframe width="50%" height="450" scrolling="no" frameborder="no" allow="autoplay" 
+    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1713370713&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+    <div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/ksierpowski" title="KSierpowski" target="_blank" style="color: #cccccc; text-decoration: none;">KSierpowski</a> · 
+        <a href="https://soundcloud.com/ksierpowski/sets/mixmaster-work" title="Mix/Master work" target="_blank" style="color: #cccccc; text-decoration: none;">Mix/Master work</a></div>
+        
+      
+        
+
+        
+    <footer>
+        <div class = "bottom_nav">
+            <div class = "footer_container">
+                <ul>
+                    <div class="contact_info">
+                        <li id="name">Kacper Sierpowski</li>
+                        <li id="adress">Waryńskiego 5/4</li>
+                        <li id="adress">51-683 Wrocław</li>
+                        <li>sierpowskikacper@gmail.com</li>
+                        <li>695-167-286</li>
+                    </div>
+                </ul>
+                <ul>
+                    <div class="follow_me">
+
+                        <a href="https://www.facebook.com/sierpowski.k/"><img src="../images/Footer/fb_icon.png" alt="fb icon" style="width:42px;height:42px;"></a>
+                        <a href="https://www.linkedin.com/in/kacper-sierpowski-81b60a252/"><img src="../images/Footer/in_icon.png" alt="li icon" style="width:42px;height:42px;"></a>
+                        <a href="https://www.instagram.com/existential.emptiness/"><img src="../images/Footer/ig_icon.png" alt="ig icon" style="width:42px;height:42px;"></a>
+
+                    </div>
+
+                </ul>
+            </div>
+            <hr></hr>
+            <div class="copyright">
+                <span>
+                    <script>document.write( new Date().getUTCFullYear() );</script> 
+                </span>
+                 &copy; All rights reserved
+            </div>
+        </div>
+    </footer>
+
+    <script src="../JavaScript/LearnersGallery.js"></script>
+
 </body>
 </html>

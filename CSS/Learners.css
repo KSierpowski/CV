@@ -1,0 +1,140 @@
+.learners_info{
+    width: 100%;
+    margin-bottom: 75px;;
+}
+
+.learners_info p{
+    color: azure;
+    max-width: 75%;
+    text-align: center;
+    margin:auto;
+    margin-bottom: 75px;
+}
+
+.learners_info hr{
+    max-width: 85%;
+    margin: auto;
+    color:#a6a6a63b;
+}
+
+
+.tattoo_gallery h2{
+    font-size: 30px;
+    color: azure;
+    text-align: center;
+    margin: 30px;
+}
+
+  .thumbnails_images {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 150px;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .thumbnails_images .image{
+    display: flex;
+    justify-content: center; 
+  }
+
+.thumbnails_images .image img{
+    width: 100%;
+  }
+.thumbnails_images .image img:hover {
+    cursor: pointer;
+    box-shadow: rgba(50, 50, 93, 0.5) 0px -10px 10px 0px, rgba(50, 50, 93, 0.5) -10px 13px 27px -10px;
+}
+.gallery {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+}
+  
+
+.gallery_content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1200px;
+}
+  
+
+.close {
+    color: white;
+    position: absolute;
+    top: 50px;
+    right: 150px;
+    font-size: 35px;
+    font-weight: bold;
+}
+  
+.close:hover {
+    color: #999;
+    cursor: pointer;
+}
+  
+
+.my_Slides {
+    display: none;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+  
+  /* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+  
+  /* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+  
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+  
+  /* Number text (1/3 etc) */
+.number_text {
+    color: #000000;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: white;
+}
+  
+
