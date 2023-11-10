@@ -18,7 +18,7 @@
 }
 
 .tattoo_gallery {
-    margin-bottom: 150px;
+    margin-bottom: 100px;
 }
 
 .tattoo_gallery h2{
@@ -142,4 +142,9 @@
 
 .videos video{
     margin:10px;
+}
+iframe{
+    display: flex;
+    margin: auto;
+    margin-bottom: 50px;;
 }
