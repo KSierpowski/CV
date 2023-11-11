@@ -1,6 +1,9 @@
 
 function openGalerry() {
-  document.getElementById("my_gallery").style.display = "block";
+  if (window.innerWidth < 567){
+    document.getElementById("my_gallery").style.display = "none";
+  }
+  else {document.getElementById("my_gallery").style.display = "block";}
 }
 
 // Close the Modal
