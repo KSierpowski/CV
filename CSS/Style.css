@@ -137,3 +137,21 @@ header nav ul li a{
     }
 
 }
+
+#scrollToTop {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 20px;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 100px;
+    cursor: pointer;
+  }
+  
+  #scrollToTop:hover {
+    background-color: #727272;
+  }
