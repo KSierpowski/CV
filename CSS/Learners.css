@@ -203,7 +203,7 @@ iframe{
     .small_screen_videos .edge_videos {
         margin-top: 10px;
         flex-direction: column;
-
+        align-items: center;
     }
     .close{
         right: 70px;
