@@ -30,6 +30,8 @@
 
 .work_container .work_experience .work{
 padding-bottom: 30px;
+display: flex;
+  flex-direction: column;
 }
 
 .work_container .work_experience .work:hover{
@@ -38,5 +40,14 @@ padding-bottom: 30px;
 
 .work_container .work_experience p{
     text-align: left;
+    color: azure;
+}
+.work_container .work_experience span{
+    font-size: 25px;
+    position: absolute;
+    margin-top: 70px;
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    font-weight: bold;
     color: azure;
 }
