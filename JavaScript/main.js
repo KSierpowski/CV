@@ -6,6 +6,11 @@ const hamburgerIcon = document.querySelector(".hamburger_icon");
 const navLinks = document.querySelectorAll("header nav ul li a");
 let isMenuOpen = false;
 
+document.addEventListener('DOMContentLoaded', function() {
+  const loaderContainer = document.querySelector('.loader-container');
+  loaderContainer.style.display = 'none'; 
+});
+
 hamburgerIcon.addEventListener("click", () => {
     isMenuOpen = !isMenuOpen; 
     if (isMenuOpen) {
