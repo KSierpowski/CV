@@ -8,22 +8,29 @@ const myProjects = [
     },
     {
         id: 1,
+        image: "./images/ball_img.png",
+        url: "https://play.unity.com/mg/other/webgl-builds-265337",
+        text: "First game made from scratch",
+    },
+    {
+        id: 2,
+        image: "./images/rps_img.png",
+        url: "https://ksierpowski.github.io/Rock-Paper-Scissors/",
+        text: "Rock, Paper, Scissors Game",
+    },
+    {
+        id: 3,
         image: "./images/rocket_img.png",
         url: "https://play.unity.com/mg/other/runrocket",
         text: "The game created based on the course",
     },
     {
-        id: 2,
+        id: 4,
         image: "./images/react_img.png",
         url: "https://github.com/KSierpowski/todo-app",
         text: "First approach to ReactJS",
     },
-    {
-        id: 3,
-        image: "./images/ball_img.png",
-        url: "https://play.unity.com/mg/other/webgl-builds-265337",
-        text: "First game made from scratch",
-    },
+
 ]
 
 
