@@ -2,18 +2,21 @@ const reasons = [
     {
       id: 0,
       image: "./images/creative_icon.png",
+      alt: "Creative icon",
       description: `A few reasons why I consider myself a creative person`,
       url: "./HTML/creativity.html",
     },
     {
       id: 1,
       image: "./images/experience_icon.png",
+      alt: "Experience icon",
       description: `The most important work experience gathered in one place`,
       url: "./HTML/experience.html",
     },
     {
       id: 2,
       image: "./images/study_icon.png",
+      alt: "Study icon",
       description: `Private tattoo and sound production projects`,
       url: "./HTML/learners.html",
     },
